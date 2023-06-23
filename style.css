@@ -294,4 +294,15 @@ footer .lineTwo a:first-child {
   .checkboxItems label{
     font-size: 17px;
   }
+
+  /* Footer */
+
+  footer .lineOne {
+    flex-direction: column;
+  }
+
+  footer .adress {
+    width: 95%;
+    margin-bottom: 20px;
+  }
 }
