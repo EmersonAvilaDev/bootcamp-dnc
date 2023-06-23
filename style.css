@@ -109,7 +109,6 @@ header .invert {
   padding: 5px;
 }
 
-
 /* Forulário */
 form {
   color: white;
@@ -139,7 +138,7 @@ form label {
 }
 
 form input::placeholder {
-  color: rgba( 57, 57, 57, 0.5);
+  color: rgba(57, 57, 57, 0.5);
 }
 
 .checkboxItems {
@@ -165,4 +164,134 @@ input[type="submit"] {
   background-color: rgba(12, 112, 242, 0.9);
   box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
   cursor: pointer;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: var(--azul-dnc);
+}
+
+footer .lineOne {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 330px;
+}
+
+footer h5 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 15px;
+  padding: 10px 10px 10px 10px;
+
+  border-radius: 10px;
+  background-color: black;
+}
+
+footer ul {
+  list-style: none;
+  font-size: 18px;
+}
+
+footer ul li {
+  text-align: center;
+  font-weight: 600;
+  margin: 20px 0px 20px 0px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: var(--cinza-hover);
+}
+
+footer .adress {
+  width: 20%;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+footer .lineTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  padding: 10px 0px 10px 0px;
+}
+
+footer .lineTwo a {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .lineTwo a:hover {
+  color: var(--cinza-hover);
+}
+
+footer .lineTwo a:first-child {
+  border-right: 3px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+  /*  Menu  */
+
+  #mainMenu {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #mainMenu button {
+    width: 100%;
+    margin: 0px;
+  }
+
+  #menu {
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+  }
+
+  #menu a {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+
+  /* Section */
+
+  section h1 {
+    font-size: 38px
+  }
+
+  section h2 {
+    font-size: 28px;
+    padding: 0px 15px 0px 15px;
+  }
+
+  form {
+    width: 95%;
+    font-size: 20px;
+  }
+
+  .checkboxItems label{
+    font-size: 17px;
+  }
 }
